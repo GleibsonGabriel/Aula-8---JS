@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="styles/style.css"/>
+  <title>Estrutura de Decisão com IF</title>
+</head>
+<body>
+  <h1>Estrtura de Decisão com IF</h1>
+  <div id="saida">Saída</div>
+  <script>
+  let hora = new Date().getHours();
+  let saida = document.getElementById('saida');
+  if (hora < 12){
+    saida.innerHTML = 'Bom dia!';
+  }
+  </script>
+</body>
+</html>
