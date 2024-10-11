@@ -12,9 +12,17 @@
   <script>
   let hora = new Date().getHours();
   let saida = document.getElementById('saida');
-  if (hora < 12){
-    saida.innerHTML = 'Bom dia!';
+  hora = 15;
+  if (hora > 3 && hora < 12){
+    saida.innerHTML = 'Bom dia! Hora: ' + hora;
   }
+  else if (hora > 11 && hora <= 19) {
+    saida.innerHTML = 'Bom tarde! Hora: ' + hora;
+  }
+  else {
+    saida.innerHTML = 'Boa noite! Hora: ' + hora;
+  }
+    saida.innerHTML += "<br> Continua";
   </script>
 </body>
 </html>
